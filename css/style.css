@@ -1,0 +1,30 @@
+.wrapper {
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.navigation {
+  background-color: #000000;
+  width: 75px;
+}
+.navigation__row {
+  margin: -61px 0 0 0;
+  position: relative;
+}
+.item1::before {
+  content: "";
+  width: 8px;
+  height: 8.5px;
+  background: url(/img/Navigation/activenav.svg) no-repeat;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+
+.navplus {
+  margin: 164px 0 0 0;
+}
+
+.item1 {
+  margin: 0 0 0 15px;
+}
