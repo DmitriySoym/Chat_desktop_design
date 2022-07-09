@@ -1,16 +1,18 @@
 .wrapper {
   overflow: hidden;
   padding: 0 15px;
+  display: flex;
 }
 
 .navigation {
   background-color: #000000;
-  width: 75px;
+  width: 71px;
 }
 .navigation__row {
   margin: -61px 0 0 0;
   position: relative;
 }
+
 .item1::before {
   content: "";
   width: 8px;

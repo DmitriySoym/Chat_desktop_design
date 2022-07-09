@@ -3,22 +3,16 @@
 .wrapper {
   overflow: hidden;
   padding: 0 15px;
+  display: flex;
 }
+//------navigation----//
 .navigation {
   background-color: #000000;
-  width: 75px;
-  &__container {
-  }
-
-  &__nav {
-  }
+  width: 71px;
 
   &__row {
     margin: -61px 0 0 0;
     position: relative;
-  }
-
-  &__items {
   }
 }
 .item1::before {
