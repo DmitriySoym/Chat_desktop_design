@@ -1,7 +1,82 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@700&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;500;700;900&family=Roboto:wght@400;700&display=swap"); /*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
 .wrapper {
   overflow: hidden;
-  padding: 0 15px;
+  padding: 10px 0 0 15px;
   display: flex;
+  font-family: lato;
 }
 
 .navigation {
@@ -29,4 +104,113 @@
 
 .item1 {
   margin: 0 0 0 15px;
+}
+
+.channels {
+  background-color: #25272a;
+  color: #b5b5b5;
+  width: 262px;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+.channels__container {
+  margin: 35px 0 0 0;
+}
+.channels__container_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0 0 0 24.5px;
+}
+.channels__container_treads {
+  margin: 30px 0 30px 25px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.channels__container_items {
+  margin: 0 0 14px 25px;
+}
+.channelsnumber {
+  margin: 0 0 0 135px;
+}
+
+.channel_item {
+  margin: 0 0 0 25px;
+}
+
+.chen_a {
+  display: block;
+  width: 213px;
+  height: 30px;
+  padding: 4px 0 0 13px;
+}
+
+.chen_a:focus {
+  background-color: #b5b5b5;
+  color: white;
+  border-radius: 5px;
+}
+
+.friendsnumber {
+  margin: 0 0 0 147px;
+}
+
+.channels__container_friends {
+  margin: 8px 0 22px 25px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.friends-persons {
+  margin: 0 0 0 24px;
+}
+.friends-persons__person {
+  display: flex;
+  margin: 10px 0 0 0;
+}
+
+.member_icon {
+  border-radius: 5px;
+}
+
+.person_name {
+  margin: 0 0 0 12px;
+  align-self: center;
+}
+
+.friends-persons__person1::before {
+  content: url(/img/channels/dotgreen.svg);
+  margin: 9px 9px 0 0;
+}
+
+.friends-persons__person2::before {
+  content: url(/img/channels/dotgrey.svg);
+  margin: 9px 9px 0 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.chen_a {
+  color: #b5b5b5;
+}
+
+.settingsicon {
+  margin: 4px 0 0 77px;
+}
+
+.chan_tit_wrapper {
+  display: flex;
+}
+
+.settingsicon1 {
+  margin: 9px 0 0 5px;
+}
+
+.dialogic {
+  margin: 0 11px 0 0;
 }
