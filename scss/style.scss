@@ -4,7 +4,6 @@
 @import "nullstyle.scss";
 .wrapper {
   overflow: hidden;
-  padding: 10px 0 0 15px;
   display: flex;
   font-family: lato;
 }
@@ -76,6 +75,7 @@
   width: 213px;
   height: 30px;
   padding: 4px 0 0 13px;
+  line-height: 17px;
 }
 .chen_a:focus {
   background-color: #b5b5b5;
@@ -225,11 +225,12 @@ ul {
   width: 2px 0 0 0;
   position: relative;
 }
-span {
+.twitt {
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   color: #3577ef;
+  margin: 0 0 12px 0;
 }
 .posts__item_messege_text {
   font-size: 13px;
@@ -238,9 +239,26 @@ span {
 }
 .posts__item_messege_text1 {
   display: flex;
+  margin: 0 0 7px 0;
 }
 .textsmile {
   position: absolute;
+}
+.message_photo {
+  border-radius: 5px;
+  margin: 0 0 8px 0px;
+}
+.text_photo_icon {
+  position: absolute;
+  z-index: 2;
+  width: 45px;
+  height: 25px;
+  background-color: white;
+  left: 296px;
+  top: 241px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 4px 0 0 6px;
 }
 .posts__item::after {
   content: "";
@@ -257,7 +275,7 @@ span {
 .posts {
   &__item {
     display: flex;
-    margin: 20px 0 0 23px;
+    margin: 20px 23px 0 23px;
     position: relative;
     z-index: 1;
     &_avatar {
@@ -265,15 +283,35 @@ span {
     }
 
     &_date {
-      margin: 0 0 0 410px;
+      padding: 0 5px;
+      margin: 0 auto;
+      z-index: 2;
+      position: relative;
+      background-color: white;
+      width: 48px;
+      font-size: 13px;
+      line-height: 18px;
     }
 
     &_date1 {
-      margin: 0 0 0 369px;
+      padding: 0 5px;
+      margin: 0 auto;
       z-index: 2;
+      position: relative;
+      background-color: white;
+      width: 152px;
+      font-size: 13px;
+      line-height: 18px;
     }
     &_date2 {
-      margin: 0 0 0 398px;
+      padding: 0 5px;
+      margin: 0 auto;
+      z-index: 2;
+      position: relative;
+      background-color: white;
+      width: 73px;
+      font-size: 13px;
+      line-height: 18px;
     }
   }
 }
@@ -291,4 +329,115 @@ span {
   display: flex;
   text-align: center;
   margin: 26px 0 0 23px;
+}
+//--------profile block------------//
+.profile_block__container {
+  background-color: #c8c3c3;
+  width: 201px;
+  height: 100%;
+}
+.profile {
+  &_name {
+    margin: 15px 0 3.5px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  &_name::after {
+    content: url(/img/channels/dotgreen.svg);
+    margin: 0 0 0 5.5px;
+  }
+
+  &_position {
+    margin: 0 0 20px 19.5px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5f6164;
+  }
+
+  &_username {
+    margin: 0 0 2px 21px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5f6164;
+  }
+
+  &_username_item {
+    margin: 0 0 11px 20.5px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+
+  &_email {
+    margin: 0 0 2px 21px;
+    color: #5f6164;
+    line-height: 14px;
+  }
+
+  &_email_item {
+    margin: 0 0 11.5px 20.5px;
+    line-height: 17px;
+  }
+
+  &_skype {
+    margin: 0 0 2px 20.5px;
+    color: #5f6164;
+    line-height: 14px;
+  }
+
+  &_skype_item {
+    margin: 0 0 9px 20px;
+    line-height: 17px;
+  }
+
+  &_timezone {
+    margin: 0 0 2px 20px;
+    line-height: 14px;
+    color: #5f6164;
+  }
+
+  &_timezone_item {
+    margin: 0 0 0 20px;
+    line-height: 17px;
+  }
+
+  &_iconbottom {
+    margin: 235.5px 0 28.5px 167.5px;
+  }
+
+  &__social {
+    &_row {
+      margin: 0 0 18.5px 19.5px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin: 0 0 14px 19.5px;
+  }
+
+  &__button {
+    &_message {
+      width: 133px;
+      height: 25px;
+      background-color: #3577ef;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px 0 0 0;
+    }
+
+    &_choose {
+      width: 25.5px;
+      height: 25px;
+      background-color: #3577ef;
+      margin: 0 0 0 2.5px;
+      border-radius: 5px;
+    }
+  }
+}
+.rectangle {
+  margin: 9.5px 9px 9.5px 9px;
 }
