@@ -29,7 +29,7 @@
 }
 
 .navplus {
-  margin: 164px 0 0 0;
+  margin: 200px 0 0 0;
 }
 .item1 {
   margin: 0 0 0 15px;
@@ -39,7 +39,7 @@
   background-color: #25272a;
   color: #b5b5b5;
   width: 262px;
-  overflow-y: scroll;
+  //overflow-y: scroll;
   box-sizing: border-box;
 
   &__container {
@@ -60,9 +60,6 @@
 
     &_items {
       margin: 0 0 14px 25px;
-    }
-
-    &_friends {
     }
   }
 }
@@ -106,9 +103,6 @@
   border-radius: 5px;
 }
 .person {
-  &_icon {
-  }
-
   &_name {
     margin: 0 0 0 12px;
     align-self: center;
@@ -128,6 +122,7 @@ ul {
 }
 .chen_a {
   color: #b5b5b5;
+  margin: 1px 0 0 0;
 }
 
 .settingsicon {
@@ -141,4 +136,159 @@ ul {
 }
 .dialogic {
   margin: 0 11px 0 0;
+}
+//------main-part--------//
+.main-part {
+  width: 870px;
+  height: 800px;
+
+  &__header {
+    //height: 49.5px;
+    display: flex;
+    margin: 31px 0 0 0;
+    border-bottom: 0.5px solid #b5b5b5;
+    &_name {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      margin: 3.5px 0 20px 24px;
+    }
+  }
+}
+.staricon {
+  margin: 8px 0 24.5px 5.5px;
+}
+.peoplesicon {
+  margin: 9px 0 23.5px 341px;
+}
+.peoplesnumber {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: #a4a4a4;
+  margin: 7.5px 0 23px 6px;
+}
+.findform {
+  border: 0.5px solid rgba(0, 0, 0, 0.24);
+  background: rgba(0, 0, 0, 0.0001);
+  width: 241px;
+  height: 33px;
+  padding: 8px 0 0 16.5px;
+  margin: 0 23px 0 24px;
+  border-radius: 5px;
+}
+.findform button {
+  background: none;
+}
+.serchform {
+  width: 80%;
+}
+.bellicon {
+  margin: 8.5px 0 22.5px 0;
+  &_container {
+    position: relative;
+  }
+}
+.reddot {
+  position: absolute;
+  top: 7px;
+  right: -2px;
+}
+.greydot {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 23px 22.5px;
+  }
+}
+.greydot2 {
+  margin: 1.5px 0;
+}
+.posts__item_messege_person {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  position: relative;
+}
+.posts__item_message_info {
+  display: flex;
+}
+.posts__item_messege_time {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8d8d8d;
+  margin: 0 0 0 8px;
+}
+.posts__item_messege_text {
+  width: 2px 0 0 0;
+  position: relative;
+}
+span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #3577ef;
+}
+.posts__item_messege_text {
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+}
+.posts__item_messege_text1 {
+  display: flex;
+}
+.textsmile {
+  position: absolute;
+}
+.posts__item::after {
+  content: "";
+  border-bottom: 0.5px solid #b5b5b5;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: -9px;
+}
+.posts__item1 {
+  display: flex;
+  margin: 20px 0 0 23px;
+}
+.posts {
+  &__item {
+    display: flex;
+    margin: 20px 0 0 23px;
+    position: relative;
+    z-index: 1;
+    &_avatar {
+      margin: 0 11.5px 0 0;
+    }
+
+    &_date {
+      margin: 0 0 0 410px;
+    }
+
+    &_date1 {
+      margin: 0 0 0 369px;
+      z-index: 2;
+    }
+    &_date2 {
+      margin: 0 0 0 398px;
+    }
+  }
+}
+
+.footer {
+  &_secondicon {
+    margin: 0 20.5px 0 18.5px;
+  }
+
+  &_thirdicon {
+    margin: 0 0 0 375px;
+  }
+}
+.main-part__footer_row {
+  display: flex;
+  text-align: center;
+  margin: 26px 0 0 23px;
 }
